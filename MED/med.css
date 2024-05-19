@@ -1,0 +1,42 @@
+.box {
+    background-color: red;
+    color: white;
+    font-size: 72px;
+  }
+  @media all and (min-width:300px){
+    #box1{
+        display: block;
+        background-color: aqua;
+    }
+  }
+  @media (max-width: 600px) and (min-width: 300px) {
+    #box2{
+        display: block;
+        background-color: yellow;
+    }
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(1);
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+       grid-template-columns: repeat(2);
+       grid-template-rows: repeat(3);
+     }
+   }
+ 
+   @media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+       grid-template-columns: repeat(1);
+       grid-template-rows: repeat(5);
+     }
+   }
+.border{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding: 20px;
+}
